@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    margin:100px auto;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(181,215,255,1) 100%);
+}
+
+
+
+.container {
+    height: 420px;
+    max-width: 420px;
+    margin:100px auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: bisque;
+    padding: 10px;
+}
+
+.container > div {
+    font-size: xx-large;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.square:nth-child(odd) {
+    background-color: bisque;
+    
+}
+
+.square:nth-child(even) {
+    background-color: blueviolet;
+    
+}
+
+.square2:nth-child(even) {
+    background-color: bisque;
+}
+
+.square2:nth-child(odd) {
+    background-color: blueviolet;
+
+}
+
+
